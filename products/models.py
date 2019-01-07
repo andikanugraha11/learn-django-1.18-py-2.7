@@ -6,3 +6,6 @@ class Product(models.Model):
     description = models.TextField(blank=True,null=True)
     price       = models.DecimalField(decimal_places=2,max_digits=1000)
     sumary      = models.TextField()
+
+    def __str__(self):
+        return self.title
